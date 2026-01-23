@@ -31,8 +31,33 @@ Follow these steps in order to set up your local environment:
 ```bash
 git clone <repository-url> your-project-name
 cd your-project-name
-
+```
 ### 2. Install PHP Dependencies
+```bash
 composer install
+```
+### 3. Install Frontend Dependencies
+```bash
+npm install
+```
+### 4. Setup the Environment File
+```bash
+# For Mac/Linux
+cp .env.example .env
+
+# For Windows
+copy .env.example .env
+```
+### 5. Generate the Application Key
+```bash
+php artisan key:generate
+```
+### 6. Configure the Database and Migrate
+```bash
+php artisan migrate
+```
+### 7. Run the project
+```bash
+composer dev
 ```
 
