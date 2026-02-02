@@ -38,7 +38,7 @@ composer install
 ```
 ### 3. Install Frontend Dependencies
 ```bash
-npm install
+bun install
 ```
 ### 4. Setup the Environment File
 ```bash
